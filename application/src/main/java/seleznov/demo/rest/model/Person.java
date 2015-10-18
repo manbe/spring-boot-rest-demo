@@ -9,6 +9,9 @@ import javax.persistence.*;
  */
 @Entity
 public class Person {
+
+    public final static String DEFAULT_PASSWORD = "qwerty";
+
     @Id
     @Column(name = "person_id", nullable = false)
     @GeneratedValue(strategy = GenerationType.IDENTITY)
