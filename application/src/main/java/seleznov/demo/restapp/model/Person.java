@@ -1,6 +1,6 @@
-package seleznov.demo.rest.model;
+package seleznov.demo.restapp.model;
 
-import seleznov.demo.rest.model.enums.UserRoleEnum;
+import seleznov.demo.restapp.model.enums.UserRoleEnum;
 
 import javax.persistence.*;
 

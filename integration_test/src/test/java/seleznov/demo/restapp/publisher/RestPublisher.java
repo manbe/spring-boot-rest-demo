@@ -1,4 +1,4 @@
-package seleznov.demo.rest.publisher;
+package seleznov.demo.restapp.publisher;
 
 /**
  * Created by illcko

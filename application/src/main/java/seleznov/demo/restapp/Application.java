@@ -1,9 +1,9 @@
-package seleznov.demo.rest;
+package seleznov.demo.restapp;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Import;
-import seleznov.demo.rest.config.SwaggerConfig;
+import seleznov.demo.restapp.config.SwaggerConfig;
 
 @SpringBootApplication
 @Import(SwaggerConfig.class)

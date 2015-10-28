@@ -1,10 +1,10 @@
-package seleznov.demo.rest.repository;
+package seleznov.demo.restapp.repository;
 
 import org.junit.Test;
 import org.springframework.beans.factory.annotation.Autowired;
-import seleznov.demo.rest.BaseIntegrationTest;
-import seleznov.demo.rest.model.Person;
-import seleznov.demo.rest.model.enums.UserRoleEnum;
+import seleznov.demo.restapp.BaseIntegrationTest;
+import seleznov.demo.restapp.model.Person;
+import seleznov.demo.restapp.model.enums.UserRoleEnum;
 
 import java.util.List;
 

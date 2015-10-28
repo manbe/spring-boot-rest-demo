@@ -1,9 +1,8 @@
-package seleznov.demo.rest.publisher;
+package seleznov.demo.restapp.publisher;
 
 import com.jayway.restassured.http.ContentType;
 import com.jayway.restassured.response.Response;
 import com.jayway.restassured.specification.RequestSpecification;
-import org.springframework.http.HttpHeaders;
 
 import static com.jayway.restassured.RestAssured.given;
 
@@ -12,7 +11,6 @@ import static com.jayway.restassured.RestAssured.given;
  */
 public class RestPublisherImpl  implements RestPublisher{
 
-    public static final String REQUEST_BODY_TYPE = "application/json";
     private String serverUrl;
 
     private RequestSpecification requestSpecification;

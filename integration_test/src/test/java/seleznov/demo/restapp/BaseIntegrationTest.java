@@ -1,11 +1,11 @@
-package seleznov.demo.rest;
+package seleznov.demo.restapp;
 
 import org.junit.runner.RunWith;
 import org.springframework.boot.test.SpringApplicationConfiguration;
 import org.springframework.boot.test.WebIntegrationTest;
 import org.springframework.test.context.TestPropertySource;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
-import seleznov.demo.rest.confg.TestConfig;
+import seleznov.demo.restapp.confg.TestConfig;
 
 /**
  * Created by illcko on 13.09.15.

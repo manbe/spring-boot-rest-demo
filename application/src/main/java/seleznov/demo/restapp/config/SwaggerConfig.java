@@ -1,4 +1,4 @@
-package seleznov.demo.rest.config;
+package seleznov.demo.restapp.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
@@ -13,7 +13,7 @@ import static springfox.documentation.builders.PathSelectors.regex;
  * Created by illcko
  */
 @EnableSwagger2
-@ComponentScan(basePackages = "seleznov.demo.rest.controller")
+@ComponentScan(basePackages = "seleznov.demo.restapp.rest.controller")
 public class SwaggerConfig {
 
     @Bean

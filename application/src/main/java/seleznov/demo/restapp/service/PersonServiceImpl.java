@@ -1,11 +1,11 @@
-package seleznov.demo.rest.service;
+package seleznov.demo.restapp.service;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import seleznov.demo.rest.model.Person;
-import seleznov.demo.rest.model.enums.UserRoleEnum;
-import seleznov.demo.rest.repository.PersonRepository;
-import seleznov.demo.rest.view.PersonView;
+import seleznov.demo.restapp.model.Person;
+import seleznov.demo.restapp.model.enums.UserRoleEnum;
+import seleznov.demo.restapp.repository.PersonRepository;
+import seleznov.demo.restapp.rest.dto.PersonView;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -13,7 +13,7 @@ import java.util.List;
 /**
  * Created by illcko
  */
-@Service
+@Service("personService")
 public class PersonServiceImpl implements PersonService {
 
     @Autowired

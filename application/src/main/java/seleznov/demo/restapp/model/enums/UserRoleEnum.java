@@ -1,4 +1,4 @@
-package seleznov.demo.rest.model.enums;
+package seleznov.demo.restapp.model.enums;
 
 /**
  * Created by illcko

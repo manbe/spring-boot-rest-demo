@@ -1,6 +1,6 @@
-package seleznov.demo.rest.view;
+package seleznov.demo.restapp.rest.dto;
 
-import seleznov.demo.rest.model.enums.UserRoleEnum;
+import seleznov.demo.restapp.model.enums.UserRoleEnum;
 
 import java.io.Serializable;
 

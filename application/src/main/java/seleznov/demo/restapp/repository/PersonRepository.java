@@ -1,8 +1,8 @@
-package seleznov.demo.rest.repository;
+package seleznov.demo.restapp.repository;
 
 import org.springframework.data.repository.CrudRepository;
-import seleznov.demo.rest.model.Person;
-import seleznov.demo.rest.model.enums.UserRoleEnum;
+import seleznov.demo.restapp.model.Person;
+import seleznov.demo.restapp.model.enums.UserRoleEnum;
 
 import java.util.List;
 

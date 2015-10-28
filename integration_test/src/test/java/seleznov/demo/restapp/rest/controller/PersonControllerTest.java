@@ -1,13 +1,13 @@
-package seleznov.demo.rest.controller;
+package seleznov.demo.restapp.rest.controller;
 
 import org.junit.Test;
 import org.springframework.beans.factory.annotation.Autowired;
-import seleznov.demo.rest.BaseIntegrationTest;
-import seleznov.demo.rest.model.Person;
-import seleznov.demo.rest.model.enums.UserRoleEnum;
-import seleznov.demo.rest.publisher.RestPublisher;
-import seleznov.demo.rest.repository.PersonRepository;
-import seleznov.demo.rest.view.PersonView;
+import seleznov.demo.restapp.BaseIntegrationTest;
+import seleznov.demo.restapp.model.Person;
+import seleznov.demo.restapp.model.enums.UserRoleEnum;
+import seleznov.demo.restapp.publisher.RestPublisher;
+import seleznov.demo.restapp.repository.PersonRepository;
+import seleznov.demo.restapp.rest.dto.PersonView;
 
 import java.util.Arrays;
 import java.util.List;
@@ -21,6 +21,7 @@ import static org.junit.Assert.assertNotNull;
 public class PersonControllerTest extends BaseIntegrationTest{
 
     public static final String PERSON_RESOURCE_URL = "api/person/";
+    public static final String ROLE = "?role=";
     @Autowired
     private RestPublisher restPublisher;
 
@@ -35,7 +36,7 @@ public class PersonControllerTest extends BaseIntegrationTest{
 
     @Test
     public void testGetUsers(){
-        List<PersonView> personList = Arrays.asList(restPublisher.doGet(PersonView[].class, "/" + PERSON_RESOURCE_URL + UserRoleEnum.USER));
+        List<PersonView> personList = Arrays.asList(restPublisher.doGet(PersonView[].class, "/" + PERSON_RESOURCE_URL + ROLE + UserRoleEnum.USER));
         assertEquals(1, personList.size());
         assertEquals("user", personList.get(0).getName());
     }
@@ -45,7 +46,8 @@ public class PersonControllerTest extends BaseIntegrationTest{
         PersonView person = new PersonView();
         person.setLogin("lol");
         person.setName("lol");
-        PersonView createdPersonView = restPublisher.doPost(PERSON_RESOURCE_URL + UserRoleEnum.USER, person, PersonView.class);
+        person.setRole(UserRoleEnum.MODERATOR);
+        PersonView createdPersonView = restPublisher.doPost(PERSON_RESOURCE_URL, person, PersonView.class);
         assertEquals("lol", createdPersonView.getName());
 
         Person createdPerson = personRepository.findOne(createdPersonView.getId());
