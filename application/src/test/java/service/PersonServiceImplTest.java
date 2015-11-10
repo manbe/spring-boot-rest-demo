@@ -7,12 +7,12 @@ import org.mockito.Mock;
 import org.mockito.invocation.InvocationOnMock;
 import org.mockito.runners.MockitoJUnitRunner;
 import org.mockito.stubbing.Answer;
-import seleznov.demo.restapp.model.Person;
-import seleznov.demo.restapp.model.enums.UserRoleEnum;
-import seleznov.demo.restapp.repository.PersonRepository;
-import seleznov.demo.restapp.service.PersonService;
-import seleznov.demo.restapp.service.PersonServiceImpl;
-import seleznov.demo.restapp.rest.dto.PersonView;
+import com.seleznov.demo.restapp.model.Person;
+import com.seleznov.demo.restapp.model.enums.UserRoleEnum;
+import com.seleznov.demo.restapp.repository.PersonRepository;
+import com.seleznov.demo.restapp.service.PersonService;
+import com.seleznov.demo.restapp.service.PersonServiceImpl;
+import com.seleznov.demo.restapp.rest.dto.PersonView;
 
 import java.util.Arrays;
 import java.util.List;
