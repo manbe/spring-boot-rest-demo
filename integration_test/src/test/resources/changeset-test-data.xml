@@ -8,4 +8,5 @@
     <include file="/ddl/create_person.xml"/>
     <include file="/dml/person_data.xml"/>
 
+
 </databaseChangeLog>
